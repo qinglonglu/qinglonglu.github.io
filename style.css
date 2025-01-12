@@ -1,7 +1,7 @@
 /* 全局样式 */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #0d1b2a, #1e2a47);  /* 深蓝渐变背景 */
+    background-color: #001f3d;  /* 深蓝渐变背景 */
     color: #fff;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ header {
 }
 
 header h1 {
-    font-size: 3.3rem;
+    font-size: 3rem;
     margin: 0;
     color: #fdfd96;  /* 黄色文字 */
 }
@@ -40,7 +40,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.4rem;  /* 增大字体 */
+    font-size: 1.2rem;
 }
 
 /* 内容区域 */
@@ -50,30 +50,23 @@ nav ul li a {
     background-color: rgba(0, 0, 0, 0.4);
     margin-top: 30px;
     border-radius: 8px;
-    text-align: center;
 }
 
+/* 最新博客文章和博客文章列表字体颜色和大小调整 */
 h2, h1 {
-    font-size: 2.8rem; /* 增大字号 */
+    font-size: 3rem; /* 调大20% */
+    color: #80cfff;  /* 淡蓝色字体 */
 }
 
 /* 文章内容 */
 blockquote {
-    font-size: 1.4rem;  /* 比正文小 10% */
+    font-size: 1.5rem;
     color: #ffeb3b;
     margin-top: 20px;
     font-style: italic;
 }
 
-/* 图片 */
-main img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-/* 版权信息 */
+/* 页脚样式 */
 footer {
     margin-top: 30px;
     padding: 10px;
@@ -81,44 +74,9 @@ footer {
     width: 100%;
     text-align: center;
     color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
-/* 媒体查询：适配不同屏幕尺寸 */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    nav ul li {
-        margin: 0 10px;
-    }
-
-    .content {
-        padding: 15px;
-    }
-
-    h2, h1 {
-        font-size: 2.2rem;
-    }
+footer p {
+    font-size: 1rem;  /* 版权信息的字体大小 */
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    .content {
-        padding: 10px;
-    }
-
-    h2, h1 {
-        font-size: 1.8rem;
-    }
-}

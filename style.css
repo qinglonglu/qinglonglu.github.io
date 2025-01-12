@@ -19,6 +19,7 @@ header {
     width: 100%;
     text-align: center; /* 确保标题和导航项水平居中 */
     position: relative; /* 为了放置汉堡菜单 */
+    z-index: 10;  /* 确保头部内容在顶部 */
 }
 
 /* 标题 */
@@ -29,19 +30,26 @@ header h1 {
 }
 
 /* 导航菜单 */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;  /* 导航项居中 */
     margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
-/* 导航链接样式（调整大部分链接） */
+/* 导航链接样式 */
 nav ul li a {
     color: #fff;               /* 保持链接文字颜色为白色 */
     text-decoration: none;      /* 去掉默认的下划线 */
@@ -69,7 +77,22 @@ nav ul li a:active {
     transform: scale(0.95);  /* 点击时缩小按钮，提供点击反馈 */
 }
 
-/* 内容区域 */
+/* 文章列表链接的样式 */
+.content ul li a {
+    font-size: 2rem;            /* 链接字体调整为2rem */
+    color: #add8e6;              /* 设置链接的颜色为淡蓝色 */
+    text-decoration: none;      /* 去除下划线 */
+    transition: all 0.3s ease;  /* 平滑过渡效果 */
+}
+
+/* 文章列表链接的悬停效果 */
+.content ul li a:hover {
+    color: #fff;                /* 悬停时变为白色 */
+    text-decoration: underline; /* 悬停时显示下划线 */
+    text-decoration-color: #fff; /* 下划线的颜色为白色 */
+}
+
+/* 文章内容 */
 .content {
     max-width: 900px;  /* 限制最大宽度 */
     width: 100%;  /* 使内容区域适应屏幕 */

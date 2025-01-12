@@ -7,10 +7,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    box-sizing: border-box;
+    min-height: 100vh;  /* 让页面最小高度为视口高度 */
 }
 
 /* 头部样式 */
@@ -54,21 +51,21 @@ nav ul li a {
 
 /* 最新博客文章和博客文章列表字体颜色和大小调整 */
 h2, h1 {
-    font-size: 3rem; /* 调大20% */
-    color: #80cfff;  /* 淡蓝色字体 */
+    font-size: 3rem; 
+    color: #80cfff; 
 }
 
 /* 文章内容 */
 blockquote {
-    font-size: 1.5rem;
-    color: #ffeb3b;
+    font-size: 2.5rem;
+    color: #fff;
     margin-top: 20px;
     font-style: italic;
 }
 
 /* 页脚样式 */
 footer {
-    margin-top: 30px;
+    margin-top: auto;  /* 自动推送到最底部 */
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;

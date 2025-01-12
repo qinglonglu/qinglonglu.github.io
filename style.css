@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center; /* 确保所有内容水平居中 */
     justify-content: flex-start;
-    min-height: 100vh;  /* 让页面最小高度为视口高度 */
+    min-height: 100vh;  /* 页面最小高度为视口高度 */
 }
 
 /* 头部样式 */

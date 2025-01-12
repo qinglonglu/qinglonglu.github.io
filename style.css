@@ -33,6 +33,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;  /* 导航项居中 */
+    margin: 0;
 }
 
 nav ul li {
@@ -40,17 +41,27 @@ nav ul li {
     margin: 0 15px;
 }
 
+/* 导航链接样式 */
 nav ul li a {
     color: #fff;               /* 保持链接文字颜色为白色 */
-    text-decoration: underline; /* 添加下划线 */
-    font-size: 2rem;            /* 增大链接字体大小为2rem */
-    transition: all 0.3s ease;  /* 添加过渡效果 */
+    text-decoration: none;      /* 去掉默认的下划线 */
+    font-size: 2.5rem;            /* 修改字体大小为2.5rem */
+    padding: 10px 20px;         /* 增加内边距，给按钮一点空间 */
+    border: 2px solid transparent; /* 初始边框透明 */
+    border-radius: 5px;         /* 圆角按钮 */
+    transition: all 0.3s ease;  /* 平滑过渡效果 */
 }
 
-/* 鼠标悬停时，导航链接的颜色和下划线变化 */
+/* 鼠标悬停时的效果 */
 nav ul li a:hover {
-    color: #ffeb3b;  /* 悬停时文字颜色变为黄色 */
-    text-decoration: none;  /* 悬停时去掉下划线 */
+    background-color: #ffeb3b;  /* 悬停时，背景颜色变为黄色 */
+    color: #001f3d;  /* 悬停时，文字颜色变为深蓝 */
+    border-color: #ffeb3b;  /* 悬停时，边框变为黄色 */
+}
+
+/* 按钮点击效果 */
+nav ul li a:active {
+    transform: scale(0.95);  /* 点击时缩小按钮，提供点击反馈 */
 }
 
 /* 内容区域 */
@@ -122,3 +133,4 @@ footer p {
         display: block;
     }
 }
+

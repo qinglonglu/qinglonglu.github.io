@@ -140,7 +140,7 @@ footer p {
 /* 手机屏幕和小设备上的样式 */
 @media (max-width: 768px) {
     nav ul {
-        display: none;  /* 默认隐藏菜单 */
+        display: block;  
         width: 100%;
         text-align: left;
     }

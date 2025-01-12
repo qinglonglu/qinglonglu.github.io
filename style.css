@@ -109,6 +109,11 @@ footer p {
     font-size: 1rem;  /* 版权信息的字体大小 */
 }
 
+/* 关于我部分自我介绍的字体大小 */
+.intro {
+    font-size: 1.5rem; /* 自我介绍字体大小为1.5rem */
+}
+
 /* 手机屏幕和小设备上的样式 */
 @media (max-width: 768px) {
     nav ul {

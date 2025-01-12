@@ -41,15 +41,20 @@ nav ul li {
     margin: 0 15px;
 }
 
-/* 导航链接样式 */
+/* 导航链接样式（调整大部分链接） */
 nav ul li a {
     color: #fff;               /* 保持链接文字颜色为白色 */
     text-decoration: none;      /* 去掉默认的下划线 */
-    font-size: 2.5rem;            /* 修改字体大小为2.5rem */
+    font-size: 2rem;            /* 修改字体大小为2rem */
     padding: 10px 20px;         /* 增加内边距，给按钮一点空间 */
     border: 2px solid transparent; /* 初始边框透明 */
     border-radius: 5px;         /* 圆角按钮 */
     transition: all 0.3s ease;  /* 平滑过渡效果 */
+}
+
+/* 导航链接（指向博客文章的链接） */
+nav ul li a.blog-link {
+    font-size: 1.5rem;         /* 修改博客文章链接字体大小为1.5rem */
 }
 
 /* 鼠标悬停时的效果 */
@@ -133,4 +138,3 @@ footer p {
         display: block;
     }
 }
-

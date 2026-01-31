@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的文章 | qinglonglu|陆怡安的个人笔记</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">qinglonglu</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="about.html" class="nav-link">关于我</a></li>
+                <li><a href="articles.html" class="nav-link active">我的文章</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="articles-page" id="articlesPage">
+            <h1>我的文章</h1>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="搜索文章..." class="search-input">
+                <button id="searchBtn" class="search-btn">🔍</button>
+            </div>
+            
+            <div class="articles-grid" id="allArticles">
+                <!-- 文章卡片由JS动态生成 -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>luyian0818@126.com</p>
+            <p class="copyright">Lu Ian.All Right Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

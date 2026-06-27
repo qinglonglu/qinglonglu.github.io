@@ -1,7 +1,7 @@
 // 所有文章数据
 const articles = [
     {
-        id: 1,
+        id: 2,
         title: "论尼康D3000",
         date: "2026-06-15",
         image: "images/article1.jpg",
@@ -14,7 +14,7 @@ const articles = [
         `
     },
     {
-        id: 2,
+        id: 3,
         title: "论松下ZS99",
         date: "2026-06-10",
         image: "images/article2.jpg",
@@ -27,7 +27,7 @@ const articles = [
         `
     },
     {
-        id: 3,
+        id: 4,
         title: "《红楼梦》丫鬟改名情节叙事功能分析",
         date: "2026-05-25",
         image: "images/article3.jpg",
@@ -40,7 +40,7 @@ const articles = [
         `
     },
     {
-        id: 4,
+        id: 1,
         title: "文学篇：以毁灭抵达永恒——三岛由纪夫毁灭美学",
         date: "2026-06-28",
         image: "images/article4.jpg",
@@ -124,7 +124,7 @@ class ArticleManager {
         ).join('');
     }
 
-    // 渲染文章详情
+   
     renderArticleDetail(articleId) {
         const container = document.getElementById('articleContainer');
         if (!container) return;
